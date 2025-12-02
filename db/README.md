@@ -2,11 +2,9 @@
 
 ## 📋 Archivos Incluidos
 
-- **`schema.sql`**: Script para crear todas las tablas de la base de datos
-- **`seed.sql`**: Datos de ejemplo (3-5 productos)
+- **`seed.sql`**: Datos con 30 productos 
 - **`DER.md`**: Documentación completa del Diagrama Entidad-Relación
 
-## 🚀 Instalación
 
 ### Requisitos Previos
 - MySQL instalado y ejecutándose
