@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Tienda Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navbar se carga dinámicamente -->
+    
+    <main class="container my-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="display-4 text-center mb-4">🛍️ Catálogo de Productos</h1>
+                
+                <!-- Barra de búsqueda -->
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" id="buscar-producto" placeholder="Buscar productos...">
+                    <button class="btn btn-primary" type="button" onclick="buscarProductos()">Buscar</button>
+                    <button class="btn btn-secondary" type="button" onclick="cargarProductos()">Limpiar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mensajes -->
+        <div id="mensajes"></div>
+
+        <!-- Loading -->
+        <div id="loading-container"></div>
+
+        <!-- Grid de productos -->
+        <div class="row" id="productos-container">
+            <!-- Los productos se cargarán aquí dinámicamente -->
+        </div>
+    </main>
+
+    <footer class="text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Tienda Online - Proyecto Final de Programación Web</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/catalogo.js"></script>
+</body>
+</html>
+
